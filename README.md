@@ -35,15 +35,31 @@ The program is based on recognizing a specific figure on the basis of one's "tre
 <img src="https://user-images.githubusercontent.com/91011609/173879128-1acbbcfb-f6af-4c88-8f59-0e532bde97a5.jpeg" width="240px" height="160px">
 <align>
 
-## Useful libraries for the project
+## Libraries useful for the project
 For the correct functioning of the project it will be advisable to install some libraries.
 
 If you want to use the program without using the web part, you will have to use two libraries:
-- The 'opencv2' library for the correct functioning of the camera, to install it just open a terminal and type:
+- The `opencv2` library for the correct functioning of the camera, to install it just open a terminal and type one of the two commands:
+<pre>
+pip install opencv-python
 
+py -m pip install opencv-python
+</pre>
 
-- The 'numpy' library for managing multidimensional arrays, to install it just open a terminal and type:
+- The `numpy` library for managing multidimensional arrays, to install it just open a terminal and type one of the two commands:
+<pre>
+pip install numpy
 
+py -m pip install numpy
+</pre>
+  
+If, on the other hand, you want to use the program with the use of the web part, in addition to the two previously mentioned libraries you will also need to install:
+   - The `Flask` library for creating web applications, to install it just open a terminal and type one of the two commands:
+   <pre>
+pip install Flask
+
+py -m pip install Flask
+</pre>
 
 _____________________________________________________________________________________________________________________________________________
 
@@ -82,3 +98,30 @@ Il programma si basa sul riconoscere un apposita cifra in base alla propria "tre
 <img src="https://user-images.githubusercontent.com/91011609/173879120-49a386b8-d4f3-4217-accb-7a263300f6d3.jpeg" width="240px" height="160px">
 <img src="https://user-images.githubusercontent.com/91011609/173879128-1acbbcfb-f6af-4c88-8f59-0e532bde97a5.jpeg" width="240px" height="160px">
 <align>
+
+## Librerie utili per il progetto
+Per il corretto funzionamento del progetto sarà opportuno installare alcune librerie.
+
+In caso si vollesse usare il programma senza uso della parte web, si dovrà usare due librerie:
+- La libreria `opencv2` per il corretto funzionamento della telecamera, per installarla basterà aprire un terminale e digitare uno dei due comandi:
+<pre>
+pip install opencv-python
+
+py -m pip install opencv-python
+</pre>
+
+- La libreria `numpy` per la gestione di array multidimensionali, per installarla basterà aprire un terminale e digitare uno dei due comandi:
+<pre>
+pip install numpy
+
+py -m pip install numpy
+</pre>
+  
+In caso invece si volesse usare il programma con l'uso della parte web, oltre le due librerie precedentemente citate bisognerà anche installare:
+  - La libreria `Flask` per la creazione di applicazioni web, per installarla basterà aprire un terminale e digitare uno dei due comandi:
+  <pre>
+pip install Flask
+
+py -m pip install Flask
+</pre>
+   
