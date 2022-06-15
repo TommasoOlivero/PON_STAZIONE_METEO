@@ -1,0 +1,98 @@
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #192036;
+    text-align: end;
+    padding-right: 50px;
+}
+
+.logoHeader{
+    background-color: #192036;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 30px;
+    float: left;
+}
+
+body{
+    background-color: lightgray;
+    text-align: center;
+    margin: 20px;
+}
+
+.logofooter{
+    background-color: #192036;
+    text-align: left;
+    padding-left: 25px;
+    float: left;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #192036;
+    text-align: end;
+    padding-right: 25px;
+
+}
+.firma{
+    background-color: #192036;
+    text-align: right;
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    color: #1b4524;
+}
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #b00c23;
+}
+
+.vsc,.prusaslicer{
+    width: 50%;
+    float: left;
+    text-align: justify;
+}
+
+.python, .mk3{
+    width: 50%;
+    float: right;
+    text-align: justify;
+}
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+    color: #040404;
+    font-size: 1.2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table {
+    table-layout: fixed;
+    width: 1200px;
+    border-collapse: collapse;
+  }
+          
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+          
+  thead th:nth-child(2) {
+    width: 50%;
+  }
+          
+  thead th:nth-child(3) {
+    width: 20%;
+  }
+  th,td {
+    padding: 10px;
+  }

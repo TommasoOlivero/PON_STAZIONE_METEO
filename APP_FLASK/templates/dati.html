@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <link rel="stylesheet" href="./static/style.css" type="text/css" />
+    <meta charset="UTF-8" />
+    <title>DATI</title>
+  </head>
+  <header>
+    <div class="logoHeader">
+      <img src="{{url_for('static', filename='logo_itis.png')}}" alt="logo" width="120" height="120"/>
+    </div>
+
+    <div class="logoHeader">
+ 
+        <img src="{{url_for('static', filename='davis.png')}}" alt="logo" width="260" height="120" padding= "120px"/>
+
+      
+    </div>
+
+      <br>
+      <div class="scelte">
+        <article>
+            <a
+                href="index.html"
+                title="Home"
+                >
+            <style>
+              .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: none;
+                border: none;
+                color: none;
+                text-align: center;
+                font-size: 28px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+              }
+              
+              .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+              }
+              
+              .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+              }
+              
+              .button:hover span {
+                padding-right: 25px;
+              }
+              
+              .button:hover span:after {
+                opacity: 1;
+                right: 0;
+              }
+              </style>
+              </head>
+              <body>   
+              <button class="button"><span>HOME </span></button>
+            </a>
+        </article>
+          <article>
+            <a
+                style="text-decoration: none; color: lightgray"
+                href="dati.html"
+                title="Home"
+                >
+              </head>
+              <body>   
+              <button class="button"><span>DATI </span></button>
+              </a>
+        </article>
+        </div>
+    </div>
+  </header>
+  <body>
+    
+
+    <h1>DATA COLLECTION</h1>
+
+    <br />
+    <style>
+    tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+    <table align="center" width = "1280" height="400" border = "3">
+        <tr>
+            <td align="center"><h3><b><font color = "#364e91">TIPOLOGIA DATO</font></b></h3></td>
+            <td align="center"><h3><b><font color = "#364e91">ORA</font></b></h3></td>
+            <td align="center"><h3><b><font color = "#364e91">DATA</font></b></h3></td>
+            <td align="center"><h3><b><font color = "#364e91">VALORE</font></b></h3></td>
+        </tr>
+      <tr>
+        <td align="left">  PRESSIONE</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ pressione_valore }}</td>
+
+      </tr>
+      <tr>
+        <td align="left">  TEMPERATURA INTERNA</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">2{{ temp_int_valore }} °C </td>
+
+      </tr>
+      <tr>
+        <td align="left">  TEMPERATURA ESTERNA</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ temp_est_valore }} °C</td>
+      </tr>
+      <tr>
+        <td align="left">  UMIDITA' INTERNA</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ umi_int_valore }} %</td>
+      </tr>
+      <tr>
+        <td align="left">  UMIDITA' ESTERNA</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ umi_est_valore }} %</td>
+      </tr>
+      <tr>
+        <td align="left">  QUANTIA' PIOGGIA</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ rain_valore }} in</td>
+    </tr>
+    <tr>
+        <td align="left">  VELOCITA' VENTO</td>
+        <td align="center">{{ ora }}</td>
+        <td align="center">{{ data }}</td>
+        <td align="center">{{ vento_valore }} km/h</td>
+    </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+    <footer>
+      <article class="logofooter">
+        <img
+          src="{{url_for('static', filename='PON_MIUR.png')}}"
+          alt="logo"
+          width="220"
+          height="110"
+        />
+      </article>
+
+      <article class="firma">
+        <font color="white">
+          AUTORI: Alessandro Belliardo - Luca Delfino - Tommaso
+          Olivero<br /><br />CONTATTI:<br />
+          alessandro.belliardo@itiscuneo.eu<br />tommaso.olivero@itiscuneo.eu<br />luca.delfino@itiscuneo.eu
+        </font>
+      </article>
+    </footer>
+  </body>
+</html>
