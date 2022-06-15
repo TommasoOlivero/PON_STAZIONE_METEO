@@ -1,4 +1,4 @@
-# Program for reading data on the davis Pro Vantage 2 station console
+# Program for reading data on the davis Pro Vantage 2 station console  and print on a website with Flask
 # PON 2021/2022 project
 __author__ = "PyTrimons"
 
