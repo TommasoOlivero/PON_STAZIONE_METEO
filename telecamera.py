@@ -1,3 +1,6 @@
+# PROGRAM TO TEST THE CAMERA
+__author__ = "PyTrimons"
+
 # import the opencv library
 import cv2
   
